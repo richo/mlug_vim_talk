@@ -4,6 +4,7 @@
 module Fugitive
   class FugitiveTest
 
+    # TODO Add some useful methods, instead of this (broken) crap.
     def to_s
       "#{super} as a string!"
     end
