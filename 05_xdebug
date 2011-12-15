@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?PHP
+
+/* This will be a little more difficult to demonstrate than most,
+ * requiring a little backend setup, I will endeavour to setup a vhost
+ * somewhere so that it can be demonstrated. In the meantime, you can see
+ * it in action is what I consider a slightly less useful context, by
+ * evaluating this script with the following command line flags <TODO What
+ * the shit are those flags>
+
+ * Open a new vim, and press \d in normal mode (I have altered the bindings in debugger.vim - they're in the version you checked out of if you used my script, then execute the PHP script.
+
+ You'll be presented with the script in question, and a blue bar showing that execution is paused at the first line. The help window on the right shows you the bindings (and for those of you interested, if you have a look at the history of the script, you can see how to easily change them)
+
+ */
+
+
+$test = "thing";
+
+
+
+
+
+
