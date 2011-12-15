@@ -1,16 +1,23 @@
 #!/usr/bin/env ruby
 #
-# Fugitive is a wrapper for git. I won't go too far into how it
-# works, purely because Tim Pipe writes /great/ documentation and
-# it's worth you checking out.
+# Fugitive is an (excellent!) wrapper around git.
 #
-# But in brief, some of the cooler and less obvious features are
+# I've made a few disperate changes to this file, purely to arrange for it to
+# have a useful git history. I'd like to run through a few useful features of
+# git, although first I'd like to detour through unimpaired.vim, which while
+# useful on it's own really shines with fugitive
 #
-# Glog - Adds all revisions (or to a given rev) to the quickfix
-# list Ggrep - Adds all occurances of a string to the quickfix
+# unimpaired creates bindings to quickly navigate,
 #
-# Worth noting that the unimpaired extension is VERY useful in this
-# context
+# ]q next in quickfix list
+# [q prev in quickfix list
+# ]Q last in quickfix list
+# [Q first in quickfix list
+#
+# etc, the same goes for [t]abs, [b]uffers, and ]> merge markers.
+#
+# With that in mind, do :Glog to load up this file's git history into the
+# quickfix list. press ]q and [q to navigate through it.
 
 module Fugitive
   class FugitiveTest
