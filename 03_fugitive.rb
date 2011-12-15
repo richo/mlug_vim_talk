@@ -18,6 +18,22 @@
 #
 # With that in mind, do :Glog to load up this file's git history into the
 # quickfix list. press ]q and [q to navigate through it.
+#
+# Execute :Gedit to return to the working copy of the file.
+#
+# :Ggrep is also incredibly useful, loading up all instances of your search
+# terms into the quickfix list. Bear in mind that you'll have to quote
+# multiword searches
+#
+# Next up, try :Gblame, which annotates the current buffer with git blame information.
+# Press <cr> on any commit in the blame window to reblame the file there (for
+# finding root causes when refactoring has gone one), or o on a commit to open
+# the whole commit's details in a new split.
+#
+# While we're here, make some changes to this file. The execute :Gstatus to get
+# a view of the index, press - to stage a file that's been modified (and
+# likewise, - to reset a file that's been staged), and press cc or C to move to
+# the commit screen which will prompt you for a commit message.
 
 module Fugitive
   class FugitiveTest
