@@ -4,7 +4,7 @@ pwd=`pwd`
 vimpath=$HOME/.vim
 merge_pattern="^\./(plugin|autoload|colors|doc|ftdetect|syntax)/"
 
-for i in `ls -d */`; do
+for i in `ls -d plugins/*/`; do
     cd $i
     for file in $(find ./ | grep -E $merge_pattern); do
         cp $file $vimpath/$file
