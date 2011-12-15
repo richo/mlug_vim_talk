@@ -1,21 +1,18 @@
-# NERD tree
+" Initialisation for vim
+map <leader>e :NERDTreeToggle<CR>
+map <leader>ge :NERDTreeFind<CR>
+finish
+" End vim initialisation
 
-Invoked with NERDTreeToggle
-( Which I bind to \e in normal mode )
+## NERD Tree
 
-Support for fairly logical bindings
+is a basic file system visualisation plugin. The lines at the top of this file bind the NERDTree plugin's show/hide to <leader> e (\e in normal mode, unless you remap leader). And to find the current file in the NERDtree with <leader>ge.
 
-o: open node
-t: tabopen node
-s: vsplit open node
-i: split open node
-cd: change pwd to node
-C: reroot NERD at node (I do a lot of cdC)
+You should now press \e, you'll see a tree view opened on the left. Most of the conventions used throughout vim and derivitives (a lot of these will seem familiar in fugitive too) hold true
 
-A couple of more advanced options ( I do not fully exploit it )
-
-m to create nodes
-
-# TODO
-
-Add some todos
+o: open a file in the most recently used buffer
+ : open a directory, if the current node is on
+s: open a file in a new vsplit
+i: open a file in a new split
+t: open a file in a new tab
+?: toggles /very/ comprehensive online help
